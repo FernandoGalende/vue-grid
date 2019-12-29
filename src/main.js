@@ -5,6 +5,8 @@ import store from './store';
 
 import App from './App.vue';
 
+import "./theme/common.scss"
+
 Vue.use(VueAxios, axios);
 
 Vue.config.productionTip = false;

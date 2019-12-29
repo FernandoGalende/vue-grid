@@ -17,7 +17,7 @@ export const actions = {
 					results.reduce( (acc, pokemon) => [
                         ...acc,
                         {
-                            name: pokemon.data.name,
+                            name: pokemon.data.name.toUpperCase(),
                             img: pokemon.data.sprites.front_default
                         }
 					], [])

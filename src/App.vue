@@ -1,27 +1,45 @@
 <template>
   <div id="app">
-    <Home msg="Welcome to Your Vue.js App" />
+    <header-app id="header"/>
+    <card-container id="cardContainer" />
+    <footer-app id="footer"/>
   </div>
 </template>
 
 <script>
-import Home from "./components/Home.vue";
+    import CardContainer from "./components/CardContainer.vue";
+    import HeaderApp from "./components/Header.vue"
+    import FooterApp from "./components/Footer.vue"
 
-export default {
-  name: "app",
-  components: {
-    Home
-  }
-};
+    export default {
+    name: "app",
+    components: {
+        CardContainer,
+        HeaderApp,
+        FooterApp,
+    }
+    };
 </script>
 
-<style>
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style lang="scss" scoped>
+    @import "./theme/_partials.scss";
+    
+    #app {
+        grid-template-areas: 'navbar' 'content' 'footer'
+    }
+
+     #header {       
+        grid-area: navbar;
+        margin: 2em;
+    }
+
+    #cardContainer {
+        grid-area: content;
+    }
+
+    #footer {   
+         grid-area: footer;
+         margin: 1em;     
+    }
+</style>>
+
