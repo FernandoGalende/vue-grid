@@ -1,8 +1,8 @@
 <template>
-  <div class="card" :style="{backgroundColor: randomColor()}">
-      <img v-if="pokemon.img" :src="pokemon.img" />
-      <span v-else>loading...</span>
-      <div class="card--name">{{pokemon.name}}</div>
+    <div class="card" :style="{backgroundColor: randomColor()}">
+        <img v-if="pokemon.img" :src="pokemon.img" />
+        <span v-else>loading...</span>
+        <div class="card--name">{{pokemon.name}}</div>
     </div>
 </template>
 
@@ -22,16 +22,16 @@
 <style lang="scss">
     @import "../theme/_partials.scss";
     
-     .card {  
-         display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            height: 14em;
+    .card {  
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 14em;
         @include mobile {
             height: 15em;
         }       
-        .card--name {
+        .card-name {
             color: white;
             font-size: 10px;
             margin-top: 0.5em;        

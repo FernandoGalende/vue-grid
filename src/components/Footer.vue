@@ -38,11 +38,10 @@
             font-size: 10px;
         }
         @include mobile {        
-           flex-direction: column;
-           a, span {
+            flex-direction: column;
+            a, span {
             padding: 5px 0px;
-        }
-
+            }
         }
     }
 </style>

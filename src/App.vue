@@ -1,9 +1,9 @@
 <template>
-  <div id="app">
-    <header-app id="header"/>
-    <card-container id="cardContainer" />
-    <footer-app id="footer"/>
-  </div>
+    <div id="app">
+        <header-app id="header"/>
+        <card-container id="cardContainer" />
+        <footer-app id="footer"/>
+    </div>
 </template>
 
 <script>
@@ -12,12 +12,12 @@
     import FooterApp from "./components/Footer.vue"
 
     export default {
-    name: "app",
-    components: {
-        CardContainer,
-        HeaderApp,
-        FooterApp,
-    }
+        name: "app",
+        components: {
+            CardContainer,
+            HeaderApp,
+            FooterApp,
+        }
     };
 </script>
 
@@ -38,8 +38,8 @@
     }
 
     #footer {   
-         grid-area: footer;
-         margin: 1em;     
+        grid-area: footer;
+        margin: 1em;     
     }
 </style>>
 

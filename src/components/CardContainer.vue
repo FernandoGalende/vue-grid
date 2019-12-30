@@ -1,10 +1,10 @@
 <template>
     <div class="wrap">
         <card id="card"
-                v-for="(pokemon, index) in pokemons"
-                v-bind:pokemon="pokemon"
-                v-bind:index="index"
-                v-bind:key="pokemon.name" 
+            v-for="(pokemon, index) in pokemons"
+            v-bind:pokemon="pokemon"
+            v-bind:index="index"
+            v-bind:key="pokemon.name" 
         />
     </div>
 </template>

@@ -1,7 +1,7 @@
 <template>
-  <div class="header">
-    <span>Fernando Galende <strong> + </strong> Onesait</span>
-  </div>
+    <div class="header">
+        <span>Fernando Galende <strong> + </strong> Onesait</span>
+    </div>
 </template>
 
 <script>
