@@ -2,7 +2,7 @@
     <div class="card" :style="{backgroundColor: randomColor()}">
         <img v-if="pokemon.img" :src="pokemon.img" />
         <span v-else>loading...</span>
-        <div class="card--name">{{pokemon.name}}</div>
+        <div class="card-name">{{pokemon.name}}</div>
     </div>
 </template>
 
@@ -32,8 +32,8 @@
             height: 15em;
         }       
         .card-name {
-            color: white;
-            font-size: 10px;
+            color: $White;
+            font-size: 12px;
             margin-top: 0.5em;        
         }
         img {

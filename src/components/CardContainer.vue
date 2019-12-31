@@ -1,5 +1,5 @@
 <template>
-    <div class="wrap">
+    <div class="wrap" v-if="pokemons.length > 0 ">
         <card id="card"
             v-for="(pokemon, index) in pokemons"
             v-bind:pokemon="pokemon"
@@ -7,6 +7,7 @@
             v-bind:key="pokemon.name" 
         />
     </div>
+    <div class="loading" v-else>loading...</div>
 </template>
 
 <script>
@@ -44,4 +45,11 @@
             grid-template-columns: repeat(4, 1fr);             
         }        
     } 
+    .loading {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 35em;
+    }
 </style>
